@@ -1,26 +1,27 @@
+cat > README.md <<'EOF'
 # 🔐 Encryption Tool
 
-Python CLI for encrypting/decrypting text with:
-- Base64, Hex, ROT13, Caesar Cipher
-- Fernet (AES, password-based)
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 🚀 Quick Start
+A small Python CLI for encrypting/decrypting text:
+- Base64, Hex, ROT13, Caesar Cipher
+- Fernet (AES, password-based demo)
+
+---
+
+## Features
+- Encrypt/decrypt text from terminal
+- Read input from file or text entry
+- Save output to file
+
+## Quick start
 
 ```bash
+git clone git@github.com:phinixvortex/encryption-tool.git
+cd encryption-tool
+pip install -r requirements.txt
 chmod +x setup_encrypt_tool.sh
 ./setup_encrypt_tool.sh
-```
-
-Or run directly:
-
-```bash
-pip install -r requirements.txt
+# or run directly
 python encrypt_tool.py
-```
-
-## 📦 Requirements
-- Python 3.8+
-- `cryptography`
-
-## 📄 License
-MIT
